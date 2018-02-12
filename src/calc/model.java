@@ -1,4 +1,4 @@
-package calc;
+ package calc;
 
 import javax.swing.JOptionPane;
 
@@ -35,7 +35,7 @@ private double result;
 			if(n2==0)
 			{ str=" ";
 		zerod=1.0;
-			JOptionPane.showMessageDialog(null,"Zero Divition Error","Error",JOptionPane.ERROR_MESSAGE);
+			//JOptionPane.showMessageDialog(null,"Zero Divition Error","Error",JOptionPane.ERROR_MESSAGE);
 			}
 			else
 			{
@@ -70,7 +70,7 @@ private double result;
 			if(n1<0.0)
 			{str=" ";
 			sqrneg=1.0;
-				JOptionPane.showMessageDialog(null,"Negative Number  input","Error",JOptionPane.ERROR_MESSAGE);
+				//JOptionPane.showMessageDialog(null,"Negative Number  input","Error",JOptionPane.ERROR_MESSAGE);
 			}
 			else
 			{

@@ -1,4 +1,4 @@
-package calc;
+ package calc;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -62,7 +62,7 @@ public class controller implements ActionListener {
 				String rees=" ";
 				v.setResult(rees);
 				System.out.println(ex);
-				v.displayErrorMessage("You Must Enter number");
+				//v.displayErrorMessage("You Must Enter number");
 			}
 		}
 		else if(index==4)
@@ -71,7 +71,9 @@ public class controller implements ActionListener {
 			num2=v.getSecondNum2();
 			if((num1==false)|| (num2==false))
 			{
-				JOptionPane.showMessageDialog(null,"You should enter integer number to evaluate mod!");
+				
+				v.setResult("NON");
+				//JOptionPane.showMessageDialog(null,"You should enter integer number to evaluate mod!");
 			}
 			else
 			{
@@ -101,7 +103,7 @@ public class controller implements ActionListener {
 			v.setResult(rees);
 			
 				System.out.println(ex);
-				v.displayErrorMessage("You Must Enter 2 numbers");
+				//v.displayErrorMessage("You Must Enter 2 numbers");
 			}
 			
 		}

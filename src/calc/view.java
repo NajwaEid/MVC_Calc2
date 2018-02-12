@@ -1,4 +1,4 @@
-package calc;
+  package calc;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -124,11 +124,12 @@ public int getSecondNum222(){
 			 
 			}
 	}
+	/*
 	public void displayErrorMessage(String m)
 	{
 		JOptionPane.showMessageDialog(null,m);
 	}
-	
+	*/
 
 	/**
 	 * Initialize the contents of the frame.

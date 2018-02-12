@@ -1,13 +1,12 @@
 package calc;
-import static org.junit.jupiter.api.Assertions.*;
+
+
+import static org.junit.Assert.assertEquals;
 
 import javax.swing.JOptionPane;
+import org.junit.*;
+import org.junit.Test;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 /**
  * 
@@ -17,7 +16,7 @@ import org.junit.jupiter.api.Test;
  * @author Najwa
  *
  */
-class TestCases {
+public class TestCases {
 
 	/**
 	 * @throws java.lang.Exception
@@ -46,7 +45,7 @@ class TestCases {
 	    	double expected = 3.0 ;
 	     calc.compute(2.0,1.0,0);
 	     String x = calc.getResult();
-	     assertEquals(expected , Double.parseDouble(x));
+	     assertEquals(expected , Double.parseDouble(x),0.0);
 
 	    }
 	  
@@ -55,7 +54,7 @@ class TestCases {
 	    	double expected = -1.0 ;
 	     calc.compute(-2.0,1.0,0);
 	     String x = calc.getResult();
-	     assertEquals(expected , Double.parseDouble(x));
+	     assertEquals(expected , Double.parseDouble(x),0.0);
 
 	    }
 	  
@@ -64,18 +63,18 @@ class TestCases {
 	    	double expected = -3.0 ;
 	     calc.compute(-2.0,-1.0,0);
 	     String x = calc.getResult();
-	     assertEquals(expected , Double.parseDouble(x));
+	     assertEquals(expected , Double.parseDouble(x),0.0);
 
 	    }
 	  
 	   
 	   
 	   @Test
-	   void testDiv0() throws Exception {
+	public   void testDiv0() throws Exception {
 		    
 		//    try {
 		    	calc.compute(4.0,0.0,3);
-		    	assertEquals(1.0 , calc.zerod);
+		    	assertEquals(1.0 , calc.zerod,0.0);
 		      
 		    // fail("Should have thrown an exception!");
 		   //   }
@@ -87,11 +86,11 @@ class TestCases {
 	   
 	   
 	   @Test
-	   void testSqur() throws Exception {
+	public   void testSqur() throws Exception {
 		    
 		   
 		        calc.computeSqr(-2.0 ,5);
-		        assertEquals(1.0,calc.sqrneg);
+		        assertEquals(1.0,calc.sqrneg,0.0);
 		    //    fail("Should have thrown an exception!");
 		   
 		     
@@ -111,7 +110,7 @@ class TestCases {
 	    	double expected = -3.0 ;
 	     calc.compute(-2.0,1.0,1);
 	     String x = calc.getResult();
-	     assertEquals(expected , Double.parseDouble(x));
+	     assertEquals(expected , Double.parseDouble(x),0.0);
 
 	    }
 
