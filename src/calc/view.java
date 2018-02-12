@@ -136,7 +136,7 @@ public int getSecondNum222(){
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.getContentPane().setBackground(new Color(255, 218, 185));
+		frame.getContentPane().setBackground(new Color(255, 160, 122));
 		frame.setBounds(100, 100, 449, 254);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);

@@ -10,6 +10,7 @@ private double result;
 	public double zerod;
 	public double sqrneg;
 	public double inputString;
+	public double s;
     
 	public model() {
 		str = " " + result;
